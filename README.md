@@ -1,4 +1,4 @@
-📈 PPO Stock Trading Agent with Streamlit Dashboard:
+# 📈 PPO Stock Trading Agent with Streamlit Dashboard:
 
 🚀 Features:
 🧠 Trains a PPO agent to buy/sell/hold based on stock indicators
