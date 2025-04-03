@@ -18,7 +18,7 @@ This custom OpenAI Gym environment simulates a stock trading experience on histo
 The observation space is a 10-dimensional vector representing market and portfolio conditions:
 
 Index	Feature	Description
-0	Open	Opening price of the stock
+0	Open	Opening price of the stock \n
 1	High	Highest price of the day
 2	Low	Lowest price of the day
 3	Close	Closing price
