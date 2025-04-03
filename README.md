@@ -17,38 +17,32 @@ This custom OpenAI Gym environment simulates a stock trading experience on histo
 📥 State Space
 The observation space is a 10-dimensional vector representing market and portfolio conditions:
 
-Index	Feature	Description
+### 📥 State Space
 
-0	Open	Opening price of the stock
+| Index | Feature           | Description                            |
+|-------|-------------------|----------------------------------------|
+| 0     | `Open`            | Opening price of the stock             |
+| 1     | `High`            | Highest price of the day               |
+| 2     | `Low`             | Lowest price of the day                |
+| 3     | `Close`           | Closing price                          |
+| 4     | `Volume`          | Daily trading volume                   |
+| 5     | `SMA_10`          | 10-day Simple Moving Average           |
+| 6     | `SMA_50`          | 50-day Simple Moving Average           |
+| 7     | `Balance`         | Current cash balance (normalized)      |
+| 8     | `Shares Held`     | Number of shares currently held        |
+| 9     | `Portfolio Value` | Total portfolio value (normalized)     |
 
-1	High	Highest price of the day
-
-2	Low	Lowest price of the day
-
-3	Close	Closing price
-
-4	Volume	Daily trading volume
-
-5	SMA_10	10-day Simple Moving Average
-
-6	SMA_50	50-day Simple Moving Average
-
-7	Balance	Current cash balance (normalized)
-
-8	Shares Held	Number of shares currently held
-
-9	Portfolio Value	Total portfolio value (normalized)
 
 🎮 Action Space
 The action space is a discrete space of 3 possible actions:
 
 Action	Description
 
-0	Sell All: Sell all held shares
-
-1	Hold: Take no action
-
-2	Buy All: Buy max shares with cash
+| Action | Description                          |
+|--------|--------------------------------------|
+| `0`    | **Sell All**: Sell all held shares   |
+| `1`    | **Hold**: Take no action             |
+| `2`    | **Buy All**: Buy max shares with cash|
 
 
 💸 Transaction Fee
